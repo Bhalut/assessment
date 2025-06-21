@@ -1,0 +1,44 @@
+[project]
+name = "primes"
+version = "0.1.0"
+description = "Sum prime numbers from an array using clean architecture and TDD."
+authors = [{ name = "Abdel Mejia", email = "28445496+Bhalut@users.noreply.github.com" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.11"
+
+[project.scripts]
+primes-cli = "app.infrastructure.cli.adapter:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.dev-dependencies]
+pytest = "8.4.1"
+pytest-cov = "6.2.1"
+black = "25.1.0"
+mypy = "1.16.1"
+ruff = "0.12.0"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = ["tests"]
+
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+
+[tool.mypy]
+strict = true
+ignore_missing_imports = true
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+exclude = ["venv", ".venv", "build", "dist"]
+
+[tool.ruff.lint]
+select = ["E", "F", "B", "I"]
+
