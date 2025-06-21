@@ -1,0 +1,70 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+.venv/
+env/
+ENV/
+venv/
+.uv/
+
+# --- Tool-specific ---
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+*.cover
+*.log
+
+# --- Lock files ---
+uv.lock
+*.lock
+
+# --- VSCode and IDEs ---
+.vscode/
+.idea/
+
+# --- CLI Reports & Coverage ---
+htmlcov/
+coverage-report/
+*.html
+*.css
+*.js
+
+# --- C# / .NET ---
+*.sln
+*.csproj
+*.user
+*.suo
+*.cache
+*.dbmdl
+*.db
+*.bak
+*.pdb
+*.exe
+*.dll
+*.nupkg
+*.log
+*.vspx
+*.vsps
+*.vsp
+*.psess
+*.vspx
+*.psess
+*.vssscc
+*.vspscc
+*.TestResults
+TestResults/
+bin/
+obj/
+*.tmp
+
+# --- System files ---
+.DS_Store
+Thumbs.db
+ehthumbs.db
+*.swp
+*~
