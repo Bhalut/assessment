@@ -50,7 +50,10 @@ def sum_primes(numbers: list[int]) -> int:
         >>> sum_primes([1, 2, 3, 4, 5])
         10
     """
-    if not isinstance(numbers, list) or not all(isinstance(n, int) for n in numbers):
+    if (
+        not isinstance(numbers, list)
+        or not all(isinstance(n, int) for n in numbers)
+    ):
         raise InvalidInputError("Expected a list of integers")
 
     return sum(filter(is_prime, numbers))
